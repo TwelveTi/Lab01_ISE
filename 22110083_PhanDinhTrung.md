@@ -7,13 +7,17 @@
 - Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
 **Answer 1**: Must conform to below structure:
 
-Description text (optional)
+We will draw the stack frame of the c program to see how it works and also look for vulnerabilities in the code.
 
 
-``` 
-    code block (optional)
-```
+![image](https://github.com/user-attachments/assets/adfb3572-870d-40bc-81be-8fae40508913)
 
-output screenshot (optional)
+As the given c program, it does not check the length of the string to copy. So we can use to override and modify the return address so that it points to the location of the shellcode.asm file
 
-**Conclusion**: comment text about the screenshot or simply answered text for the question
+The requirement of the post is to add 127.1.1.1 google.com to etc/hosts
+
+![image](https://github.com/user-attachments/assets/fefdfa4e-9915-438b-ad48-db8304d365bc)
+
+this is the initial state of etc/hosts.
+
+
